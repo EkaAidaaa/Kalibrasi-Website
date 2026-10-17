@@ -1,4 +1,4 @@
-const C = window.CFG, $ = (s) => document.querySelector(s);
+const C = window.CFG || {}, $ = (s) => document.querySelector(s);
 const h = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
 const KELAS = [..."ABCDEFGHIJ"].map((x) => "VII " + x).concat([..."ABCDEFGHI"].map((x) => "VIII " + x), [..."ABCDEFGHIJ"].map((x) => "IX " + x));
 const TOPIK = ["Umum", "Literasi", "Numerasi", "Residu & Daur Ulang", "Tanya Jawab"];
@@ -19,7 +19,8 @@ const g = [["Kelas VII", 0, 10], ["Kelas VIII", 10, 19], ["Kelas IX", 19, 29]];
 g.forEach(([l, a, b]) => { const og = h("optgroup"); og.label = l; KELAS.slice(a, b).forEach((k) => og.append(new Option(k, k))); $("#pkelas").append(og); });
 TOPIK.forEach((t) => $("#ctopik").append(new Option(t, t)));
 
-if (!C.firebase || !C.firebase.apiKey) { tampil("warn"); }
+if (!window.CFG) { $("#wmsg").textContent = "Diagnosis: config.js tidak terbaca atau ada salah ketik di dalamnya (kurang tanda kutip, koma, atau kurung)."; tampil("warn"); }
+else if (!C.firebase || !C.firebase.apiKey) { $("#wmsg").textContent = "Diagnosis: config.js terbaca, tetapi apiKey di bagian firebase masih kosong. Pastikan file yang terunggah ke GitHub sudah yang terisi."; tampil("warn"); }
 else main();
 
 async function main() {
