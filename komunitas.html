@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f3a66">
+  <title>Komunitas - LITNUM KALIBRASI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <i class="dc" style="--w:230px;top:30%;animation-duration:85s;animation-delay:-15s"></i>
+    <i class="dc" style="--w:180px;top:75%;animation-duration:70s;animation-delay:-45s"></i>
+    <span class="rc r1">♻️</span><span class="rc r3">♻️</span>
+  </div>
+  <header class="top">
+    <a class="logo" href="index.html">LITNUM KALIBRASI</a>
+    <nav><a href="index.html">← Kembali ke Beranda</a></nav>
+  </header>
+
+  <main>
+    <section id="warn" class="kbox hidden">
+      <h1>Komunitas belum aktif</h1>
+      <p>Server komunitas belum disambungkan. Isi bagian <strong>firebase</strong> di file <strong>config.js</strong> (ikuti panduan pengaturan), lalu muat ulang halaman ini.</p>
+    </section>
+
+    <section id="gate" class="kbox hidden">
+      <h1>👥 Komunitas Belajar</h1>
+      <p>Berdiskusi dan saling bantu dengan teman-teman SMPN 1 Bangli. Masuk dengan akun Google (Gmail) kamu.</p>
+      <button class="cta" id="login">Masuk dengan Google</button>
+      <p class="note">Kalau gagal masuk, buka link ini di Chrome atau Safari, jangan dari dalam aplikasi WhatsApp atau Instagram.</p>
+    </section>
+
+    <section id="profil" class="kbox hidden">
+      <h1>Lengkapi profilmu</h1>
+      <p>Nama dan kelas akan tampil di setiap kiriman diskusimu.</p>
+      <form id="pform">
+        <label>Nama <input id="pnama" maxlength="40" minlength="2" required autocomplete="name" placeholder="Nama lengkap atau panggilan"></label>
+        <label>Kelas <select id="pkelas" required></select></label>
+        <button class="cta" type="submit">Simpan dan mulai</button>
+      </form>
+    </section>
+
+    <section id="forum" class="forum hidden">
+      <div class="me"><span>Halo, <strong id="mnama"></strong> <span id="mkelas" class="kls"></span></span><span><button id="ubah">Ubah profil</button><button id="keluar">Keluar</button></span></div>
+      <form class="composer" id="cform">
+        <textarea id="ctext" rows="3" maxlength="500" required placeholder="Tulis pertanyaan atau ceritamu di sini. Gunakan bahasa yang sopan ya!"></textarea>
+        <div class="row"><select id="ctopik"></select><small id="ccount">0/500</small><button class="cta" type="submit">Kirim</button></div>
+      </form>
+      <div class="chips" id="chips"></div>
+      <div id="feed"></div>
+      <p class="kosongf hidden" id="kosong">Belum ada diskusi. Jadilah yang pertama! 🌱</p>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script type="module" src="komunitas.js"></script>
+</body>
+</html>
