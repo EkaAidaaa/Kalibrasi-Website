@@ -33,15 +33,5 @@ window.CFG = {
   admin: [],
 
   // Komunitas: salin dari Firebase (Project settings > Your apps > Web)
-  firebase: { apiKey: "", authDomain: "", projectId: "", storageBucket: "", messagingSenderId: "", appId: "" }
-};
-
-const firebaseConfig = {
-  apiKey: "AIzaSyC6cOGQQMmdAjhbLFYIZ5kod2O11q2ih7o",
-  authDomain: "kalibrasi-4a7a2.firebaseapp.com",
-  projectId: "kalibrasi-4a7a2",
-  storageBucket: "kalibrasi-4a7a2.firebasestorage.app",
-  messagingSenderId: "980414560379",
-  appId: "1:980414560379:web:7c3cc956d76ceb00ffcade",
-  measurementId: "G-E08NSPMMBL"
+  firebase: { apiKey: "AIzaSyC6cOGQQMmdAjhbLFYIZ5kod2O11q2ih7o", authDomain: "kalibrasi-4a7a2.firebaseapp.com", projectId: "kalibrasi-4a7a2", storageBucket: "kalibrasi-4a7a2.firebasestorage.app", messagingSenderId: "980414560379", appId: "1:980414560379:web:7c3cc956d76ceb00ffcade" }
 };
