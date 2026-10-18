@@ -42,12 +42,13 @@ document.querySelectorAll("[data-menu]").forEach((a) => a.addEventListener("clic
   if (k === "komunitas") return;
   e.preventDefault();
   if (k === "gim") {
-    buka("Gim Digital", daftar((C.games || []).map((g) => ({ ...g, aksi: "Play" }))));
-  } else if (k === "media") {
-    const m = C.materi || [];
-    if (!m.length) return toast("Materi segera hadir");
+    buka("Game Evaluasi", daftar((C.games || []).map((g) => ({ ...g, aksi: "Play" }))));
+  } else if (k === "media" || k === "banksoal") {
+    const cfg = k === "media" ? ["materi", "Media Pembelajaran", "Materi segera hadir"] : ["banksoal", "Bank Soal Litnum", "Bank soal segera hadir"];
+    const m = C[cfg[0]] || [];
+    if (!m.length) return toast(cfg[2]);
     if (m.length === 1) return window.open(m[0].file, "_blank", "noopener");
-    buka("Media Pembelajaran", daftar(m.map((x) => ({ judul: x.judul, ket: x.ket, ikon: "📄", url: x.file, aksi: "Baca" }))));
+    buka(cfg[1], daftar(m.map((x) => ({ judul: x.judul, ket: x.ket, ikon: "📄", url: x.file, aksi: "Baca" }))));
   } else {
     const u = (C.links || {})[k];
     if (!u || u === "#") return toast("Segera hadir");
