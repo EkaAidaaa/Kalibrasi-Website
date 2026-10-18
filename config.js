@@ -25,6 +25,13 @@ window.CFG = {
     { judul: "LKPD Literasi Dan Numerasi Siswa", ket: "Latihan Literasi Dan Numerasi.", file: "LKPD LITNUM1.pdf" }
   ],
 
+  // Data Hasil: taruh 3 file PDF di folder yang sama dengan index.html, lalu ganti judul dan nama filenya.
+  datahasil: [
+    { judul: "Data Hasil 1", ket: "Dokumen data dan hasil kegiatan.", file: "data-hasil-1.pdf" },
+    { judul: "Data Hasil 2", ket: "Dokumen data dan hasil kegiatan.", file: "data-hasil-2.pdf" },
+    { judul: "Data Hasil 3", ket: "Dokumen data dan hasil kegiatan.", file: "data-hasil-3.pdf" }
+  ],
+
   // Ebook (Hasil Karya Siswa): taruh file PDF di folder yang sama dengan index.html,
   // lalu isi judul, penulis, dan nama filenya. "cover" boleh dikosongkan (otomatis dibuatkan sampul warna)
   // atau diisi nama file gambar sampul, misalnya "cover-1.jpg". Tambah ebook dengan menyalin satu baris.
