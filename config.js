@@ -14,7 +14,7 @@ window.CFG = {
   // Media Pembelajaran: taruh file PDF di folder "materi" lalu tulis namanya di sini.
   // Kalau hanya 1 PDF, klik menu langsung membuka PDF-nya.
   materi: [
-    { judul: "Materi Pembelajaran Litnum", ket: "Materi pembelajaran dalam bentuk PDF.", file: "materi/materi-1.pdf" }
+    { judul: "Kemasan Food Packaging", ket: "Literasi Dan Numerasi", file: "materi/materi-1.pdf" }
   ],
 
   // Galeri: taruh foto di folder "foto" lalu tulis namanya di sini (tambah baris sesukanya).
