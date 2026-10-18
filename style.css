@@ -390,3 +390,46 @@ footer .orbit { border-color:rgba(255,255,255,.35); }
 .bacaan p { margin:.5rem 0 1rem; line-height:1.8; }
 .bacaan h4 { color:var(--navy); font-size:1.15rem; margin:1.4rem 0 .6rem; }
 .bacaan ol { margin:0; padding:1rem 1rem 1rem 2.4rem; background:#f1f7fd; border-radius:14px; display:grid; gap:.5rem; }
+
+/* ===== Ebook dan Ruang Refleksi ===== */
+.c7.wide { grid-column:span 3; }
+@media (max-width:1000px) { .card.wide { grid-column:span 2; } .card.c6 { grid-column:span 2; } }
+.rak { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:1.2rem; }
+.bk { display:flex; flex-direction:column; text-decoration:none; color:var(--ink); }
+.cover { position:relative; aspect-ratio:3/4; border-radius:6px 14px 14px 6px; padding:1rem .9rem .8rem 1.3rem; color:#fff; display:flex; flex-direction:column; justify-content:space-between; overflow:hidden; box-shadow:6px 8px 16px rgba(15,58,102,.3); transition:transform .25s; }
+.cover::before { content:""; position:absolute; left:0; top:0; bottom:0; width:.6rem; background:rgba(0,0,0,.22); }
+.cover.img strong { opacity:0; } .cover img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.cover strong { position:relative; font:800 1.05rem "Bricolage Grotesque",sans-serif; line-height:1.15; }
+.cover small { position:relative; font-weight:700; letter-spacing:.14em; font-size:.62rem; opacity:.8; }
+.bk:hover .cover { transform:translateY(-6px) rotate(-1.5deg); }
+.bk h3 { font-size:1rem; color:var(--navy); margin:.7rem 0 .1rem; } .bk p { margin:0; font-size:.85rem; color:#4a5d78; }
+.bk .baca { margin-top:.4rem; font-weight:800; font-size:.85rem; color:var(--orange); }
+
+.rj-note { background:#eef6ff; border-radius:12px; padding:.6rem .9rem; font-size:.88rem; color:#3d5573; margin:0 0 1rem; }
+.rj-tabs { width:max-content; margin-bottom:1rem; }
+.rj-form { display:grid; gap:1rem; } .rj-form label { display:grid; gap:.35rem; font-weight:700; color:var(--navy); }
+.rj-form textarea,.rj-form select { font:1rem "DM Sans",sans-serif; padding:.6rem .8rem; border:2px solid #cfe0f1; border-radius:12px; width:100%; }
+.rj-skala { display:grid; grid-template-columns:repeat(5,1fr); gap:.4rem; }
+.rj-skala button { border:2px solid #cfe0f1; background:#fff; border-radius:14px; padding:.5rem .2rem; cursor:pointer; display:grid; gap:.2rem; justify-items:center; font:600 .7rem "DM Sans",sans-serif; color:#3d5573; transition:transform .15s; }
+.rj-skala button b { width:2rem; height:2rem; border-radius:50%; display:grid; place-items:center; background:var(--c); color:var(--ink); font-size:1rem; }
+.rj-skala button.on { border-color:var(--navy); background:#eef6ff; transform:translateY(-3px); } .rj-skala button.on span { color:var(--navy); font-weight:800; }
+.rj .btn { margin:0; }
+.rj-kosong { text-align:center; padding:2rem 1rem; color:#4a5d78; }
+.rj-stat { display:grid; grid-template-columns:repeat(3,1fr); gap:.6rem; margin-bottom:1rem; }
+.rj-stat div { background:#f1f7fd; border-radius:14px; padding:.7rem; text-align:center; } .rj-stat b { display:block; color:var(--navy); font:800 1.15rem "Bricolage Grotesque",sans-serif; } .rj-stat span { font-size:.75rem; color:#4a5d78; }
+#db h4 { color:var(--navy); margin:1rem 0 .5rem; font-size:1.05rem; }
+.rj-bars { display:flex; align-items:flex-end; gap:.5rem; height:150px; padding:.6rem .6rem 0; background:linear-gradient(#fff 0 0) padding-box,repeating-linear-gradient(#e6eef7 0 1px,transparent 1px 25%); border-radius:14px; border:2px solid #e6eef7; }
+.rj-bar { flex:1; height:100%; display:flex; flex-direction:column; justify-content:flex-end; align-items:center; }
+.rj-bar i { display:block; width:100%; max-width:42px; height:calc(var(--s) * 18%); background:var(--c); border-radius:8px 8px 3px 3px; animation:tumbuh .7s ease-out; transform-origin:bottom; }
+.rj-bar span { font-size:.62rem; color:#4a5d78; margin-top:.2rem; white-space:nowrap; }
+.rj-aksi { margin:.8rem 0 .2rem; }
+.rj-item { border:2px solid #e3edf7; border-radius:16px; padding:.8rem 1rem; margin-bottom:.7rem; } .rj-item p { margin:.25rem 0 0; font-size:.93rem; }
+.rj-hd { display:flex; align-items:center; gap:.6rem; flex-wrap:wrap; } .rj-hd strong { color:var(--navy); } .rj-hd small { color:#5b6f8a; flex:1; }
+.rj-pill { border-radius:999px; padding:.1rem .7rem; font-size:.75rem; font-weight:800; color:var(--ink); }
+.rj-del { border:0; background:none; color:#c0392b; font-weight:700; cursor:pointer; }
+@media (max-width:640px) { .rj-skala span { display:none; } .rj-skala button { padding:.5rem 0; } .rak { grid-template-columns:repeat(2,1fr); } }
+
+/* Tombol umum di dalam jendela */
+.btn { display:inline-block; background:var(--navy); color:#fff; border:0; border-radius:999px; padding:.7rem 1.5rem; font:700 1rem "DM Sans",sans-serif; cursor:pointer; box-shadow:0 4px 0 rgba(15,58,102,.3); transition:transform .15s; }
+.btn:hover { transform:translateY(-2px); } .btn:active { transform:translateY(3px); box-shadow:none; }
+.btn.alt { background:#fff; color:var(--navy); border:2px solid var(--navy); box-shadow:none; }
