@@ -73,6 +73,27 @@ $("#lbp").onclick = () => geser(-1); $("#lbn").onclick = () => geser(1); $("#lbx
 lb.addEventListener("click", (e) => { if (e.target === lb) lb.close(); });
 lb.addEventListener("keydown", (e) => { if (e.key === "ArrowLeft") geser(-1); if (e.key === "ArrowRight") geser(1); });
 
+
+/* Berita dan bacaan */
+const news = $("#news");
+function baca(b) {
+  const w = h("div", "bacaan");
+  if (b.foto) { const im = new Image(); im.src = b.foto; im.alt = b.judul; im.onerror = () => im.remove(); w.append(im); }
+  w.append(h("small", "", b.kategori));
+  (b.isi || []).forEach((p) => w.append(h("p", "", p)));
+  if ((b.tanya || []).length) { w.append(h("h4", "", "Uji pemahaman")); const ol = h("ol"); b.tanya.forEach((q) => ol.append(h("li", "", q))); w.append(ol); }
+  buka(b.judul, w);
+}
+(window.BERITA || []).forEach((b) => {
+  const a = h("a", "nw"), th = h("i", "th"), d = h("div");
+  a.href = "#";
+  if (b.foto) { const im = new Image(); im.src = b.foto; im.alt = b.judul; im.loading = "lazy"; im.onerror = () => im.remove(); th.append(im); }
+  d.append(h("small", "", b.kategori), h("h3", "", b.judul), h("p", "", b.ringkas), h("span", "arr", "Baca →"));
+  a.append(th, d);
+  a.onclick = (e) => { e.preventDefault(); baca(b); };
+  news.append(a);
+});
+
 /* Bar progres + menu aktif */
 const bar = $("#bar"), menu = [...document.querySelectorAll(".top nav a")], target = menu.map((a) => document.querySelector(a.getAttribute("href")));
 addEventListener("scroll", () => {
