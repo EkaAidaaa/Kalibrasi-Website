@@ -192,3 +192,8 @@ input:focus,select:focus,textarea:focus { outline:3px solid rgba(245,130,32,.35)
 
 @media (max-width:860px) { .about-wrap { grid-template-columns:1fr; } .orbit { width:200px; height:200px; } .orbit i { transform:rotate(var(--a)) translateY(-100px) rotate(calc(var(--a) * -1)); } }
 @media (max-width:640px) { .gitem { flex-wrap:wrap; } .gitem b { width:100%; text-align:center; } .ggrid { grid-template-columns:repeat(2,1fr); gap:.7rem; } .gt span { font-size:.75rem; } dialog { width:96vw; } }
+
+/* Logo komunitas literasi di samping tulisan KALIBRASI */
+.logo { display:flex; align-items:center; gap:.6rem; }
+.logo-img { height:2.7rem; width:auto; display:block; }
+@media (max-width:640px) { .logo-img { height:2.2rem; } }
