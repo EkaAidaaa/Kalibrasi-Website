@@ -25,14 +25,17 @@ window.CFG = {
     { judul: "LKPD Literasi Dan Numerasi Siswa", ket: "Latihan Literasi Dan Numerasi.", file: "LKPD LITNUM1.pdf" }
   ],
 
-  // Galeri: taruh foto di folder "foto" lalu tulis namanya di sini (tambah baris sesukanya).
+  // Galeri: taruh foto di folder yang sama dengan index.html lalu tulis namanya di sini (tambah baris sesukanya).
   foto: [
-    { src: "foto/literasi-1.jpg", cap: "Dokumentasi Literasi 1" },
-    { src: "foto/literasi-2.jpg", cap: "Dokumentasi Literasi 2" },
-    { src: "foto/literasi-3.jpg", cap: "Dokumentasi Literasi 3" },
-    { src: "foto/literasi-4.jpg", cap: "Dokumentasi Literasi 4" },
-    { src: "foto/literasi-5.jpg", cap: "Dokumentasi Literasi 5" },
-    { src: "foto/literasi-6.jpg", cap: "Dokumentasi Literasi 6" }
+    { src: "gambarr1.jpeg", cap: "Dokumentasi Literasi 1" },
+    { src: "gambarr2.jpeg", cap: "Dokumentasi Literasi 2" },
+    { src: "gambarr3.jpeg", cap: "Dokumentasi Literasi 3" },
+    { src: "gambarr4.jpeg", cap: "Dokumentasi Literasi 4" },
+    { src: "gambarr5.jpeg", cap: "Dokumentasi Literasi 5" },
+    { src: "gambarr6.jpeg", cap: "Dokumentasi Literasi 6" },
+    { src: "gambarr7.jpeg", cap: "Dokumentasi Literasi 7" },
+    { src: "gambarr8.jpeg", cap: "Dokumentasi Literasi 8" },
+    { src: "gambarr9.jpeg", cap: "Dokumentasi Literasi 9" }
   ],
 
   // Komunitas: email guru/admin yang boleh menghapus kiriman siapa pun (huruf kecil semua)
