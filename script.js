@@ -136,8 +136,8 @@ document.querySelectorAll("[data-menu]").forEach((a) => a.addEventListener("clic
     buka("Ebook Hasil Karya Siswa", rak(e));
   } else if (k === "refleksi") {
     buka("Ruang Refleksi", refleksi());
-  } else if (k === "media" || k === "banksoal") {
-    const cfg = k === "media" ? ["materi", "Media Pembelajaran", "Materi segera hadir"] : ["banksoal", "Bank Soal Litnum", "Bank soal segera hadir"];
+  } else if (k === "media" || k === "banksoal" || k === "datahasil") {
+    const cfg = { media: ["materi", "Media Pembelajaran", "Materi segera hadir"], banksoal: ["banksoal", "Bank Soal Litnum", "Bank soal segera hadir"], datahasil: ["datahasil", "Data Hasil", "Data hasil segera hadir"] }[k];
     const m = C[cfg[0]] || [];
     if (!m.length) return toast(cfg[2]);
     if (m.length === 1) return window.open(m[0].file, "_blank", "noopener");
