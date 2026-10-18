@@ -4,40 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0f3a66">
-  <title>Komunitas - LITNUM KALIBRASI</title>
+  <title>Komunitas - GLE KALIBRASI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="kpage">
   <div class="sky" aria-hidden="true">
-    <i class="dc" style="--w:230px;top:30%;animation-duration:85s;animation-delay:-15s"></i>
-    <i class="dc" style="--w:180px;top:75%;animation-duration:70s;animation-delay:-45s"></i>
+    <i class="dc" style="--w:230px;top:40%;animation-duration:85s;animation-delay:-15s"></i>
+    <i class="dc" style="--w:180px;top:78%;animation-duration:70s;animation-delay:-45s"></i>
     <span class="rc r1">♻️</span><span class="rc r3">♻️</span>
   </div>
   <header class="top">
-    <a class="logo" href="index.html"><img class="logo-img" src="logo.png" alt="Logo Komunitas Literasi" onerror="this.style.display='none'"><span>KALIBRASI</span></a>
+    <a class="logo" href="index.html"><img class="logo-img" src="logo.png" alt="Logo GLE (Gerakan Literasi Esaba)" onerror="this.style.display='none'"><span>KALIBRASI</span></a>
     <nav><a href="index.html">← Kembali ke Beranda</a></nav>
   </header>
 
-  <main>
+  <section class="khero">
+    <div class="khero-in">
+      <small>GLE KALIBRASI</small>
+      <h1>Komunitas Belajar</h1>
+      <p>Tanya, berbagi cerita, dan berdiskusi tentang literasi dan numerasi bersama teman-teman SMPN 1 Bangli.</p>
+    </div>
+  </section>
+
+  <main class="kmain">
     <section id="warn" class="kbox hidden">
-      <h1>Komunitas belum aktif</h1>
-      <p>Server komunitas belum disambungkan. Isi bagian <strong>firebase</strong> di file <strong>config.js</strong> (ikuti panduan pengaturan), lalu muat ulang halaman ini.</p>
+      <h2>Komunitas belum aktif</h2>
+      <p>Server komunitas belum disambungkan. Isi bagian <strong>firebase</strong> di file <strong>config.js</strong>, lalu muat ulang halaman ini.</p>
       <p class="note" id="wmsg"></p>
     </section>
 
-    <section id="gate" class="kbox hidden">
-      <h1>👥 Komunitas Belajar</h1>
-      <p>Berdiskusi dan saling bantu dengan teman-teman SMPN 1 Bangli. Masuk dengan akun Google (Gmail) kamu.</p>
-      <button class="cta" id="login">Masuk dengan Google</button>
-      <p class="note">Kalau gagal masuk, buka link ini di Chrome atau Safari, jangan dari dalam aplikasi WhatsApp atau Instagram.</p>
+    <section id="gate" class="gate hidden">
+      <div class="gfeat">
+        <h2>Apa yang bisa kamu lakukan di sini?</h2>
+        <div class="gf"><span class="gi" style="--c:#a8d4ff"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><div><strong>Tanya dan jawab</strong><p>Bingung soal literasi atau numerasi? Tanyakan ke teman dan guru.</p></div></div>
+        <div class="gf"><span class="gi" style="--c:#9be7c4"><svg viewBox="0 0 24 24"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></span><div><strong>Berbagi cerita</strong><p>Ceritakan pengalaman belajar dan idemu memanfaatkan barang bekas.</p></div></div>
+        <div class="gf"><span class="gi" style="--c:#ffd27a"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></span><div><strong>Saling menyemangati</strong><p>Beri dukungan dan balasan untuk diskusi teman-temanmu.</p></div></div>
+      </div>
+      <div class="kbox">
+        <h2>Masuk ke komunitas</h2>
+        <p>Gunakan akun Google (Gmail) kamu.</p>
+        <button class="gbtn" id="login"><span class="gg">G</span> Masuk dengan Google</button>
+        <p class="note">Kalau gagal masuk, buka link ini di Chrome atau Safari, jangan dari dalam aplikasi WhatsApp atau Instagram.</p>
+      </div>
     </section>
 
     <section id="profil" class="kbox hidden">
-      <h1>Lengkapi profilmu</h1>
+      <h2>Lengkapi profilmu</h2>
       <p>Nama dan kelas akan tampil di setiap kiriman diskusimu.</p>
+      <div class="pprev"><div class="av" id="pav">?</div><div><strong id="ppn">Namamu</strong> <span class="kls" id="ppk">Kelas</span></div></div>
       <form id="pform">
         <label>Nama <input id="pnama" maxlength="40" minlength="2" required autocomplete="name" placeholder="Nama lengkap atau panggilan"></label>
         <label>Kelas <select id="pkelas" required></select></label>
@@ -45,15 +62,45 @@
       </form>
     </section>
 
-    <section id="forum" class="forum hidden">
-      <div class="me"><span>Halo, <strong id="mnama"></strong> <span id="mkelas" class="kls"></span></span><span><button id="ubah">Ubah profil</button><button id="keluar">Keluar</button></span></div>
-      <form class="composer" id="cform">
-        <textarea id="ctext" rows="3" maxlength="500" required placeholder="Tulis pertanyaan atau ceritamu di sini. Gunakan bahasa yang sopan ya!"></textarea>
-        <div class="row"><select id="ctopik"></select><small id="ccount">0/500</small><button class="cta" type="submit">Kirim</button></div>
-      </form>
-      <div class="chips" id="chips"></div>
-      <div id="feed"></div>
-      <p class="kosongf hidden" id="kosong">Belum ada diskusi. Jadilah yang pertama! 🌱</p>
+    <section id="forum" class="kgrid hidden">
+      <aside class="kside">
+        <div class="kcard mine">
+          <div class="av big" id="mav">?</div>
+          <strong id="mnama"></strong>
+          <span class="kls" id="mkelas"></span>
+          <div class="mebtn"><button id="ubah">Ubah profil</button><button id="keluar">Keluar</button></div>
+        </div>
+        <div class="kcard">
+          <h3>Topik</h3>
+          <div class="topiklist" id="topiklist"></div>
+        </div>
+      </aside>
+
+      <div class="kcenter">
+        <form class="composer2" id="cform">
+          <div class="cwrap"><div class="av" id="cav">?</div><textarea id="ctext" rows="2" maxlength="500" required placeholder="Apa yang ingin kamu tanyakan atau ceritakan? Gunakan bahasa yang sopan ya."></textarea></div>
+          <div class="tchips" id="ctopik"></div>
+          <div class="crow"><small id="ccount">0/500</small><button class="cta" type="submit">Kirim diskusi</button></div>
+        </form>
+        <div class="toolbar">
+          <input id="cari" type="search" placeholder="Cari diskusi atau nama...">
+          <div class="seg" id="urut"><button class="on" data-u="baru">Terbaru</button><button data-u="populer">Terpopuler</button></div>
+        </div>
+        <div id="feed"></div>
+        <div class="kosongf hidden" id="kosong"><strong>Belum ada diskusi di sini.</strong><p>Jadilah yang pertama memulai!</p></div>
+      </div>
+
+      <aside class="kside">
+        <div class="kcard stat">
+          <h3>Sekilas komunitas</h3>
+          <div class="sg"><div><b id="stD">0</b><span>Diskusi</span></div><div><b id="stA">0</b><span>Anggota aktif</span></div><div><b id="stS">0</b><span>Dukungan</span></div></div>
+        </div>
+        <div class="kcard">
+          <h3>Aturan bersama</h3>
+          <ol class="rules"><li>Gunakan bahasa yang sopan.</li><li>Hargai pendapat teman.</li><li>Jangan membagikan data pribadi seperti alamat atau nomor HP.</li><li>Laporkan kiriman yang tidak pantas kepada guru.</li></ol>
+        </div>
+        <a class="kcard klink" href="index.html#menu"><strong>Kembali belajar</strong><span>Buka menu media dan gim →</span></a>
+      </aside>
     </section>
   </main>
 
