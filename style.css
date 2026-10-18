@@ -392,8 +392,8 @@ footer .orbit { border-color:rgba(255,255,255,.35); }
 .bacaan ol { margin:0; padding:1rem 1rem 1rem 2.4rem; background:#f1f7fd; border-radius:14px; display:grid; gap:.5rem; }
 
 /* ===== Ebook dan Ruang Refleksi ===== */
-.c7.wide { grid-column:span 3; }
-@media (max-width:1000px) { .card.wide { grid-column:span 2; } .card.c6 { grid-column:span 2; } }
+.c8 { --c:#b8e6a0; }
+@media (max-width:1000px) { .card.wide { grid-column:span 2; } .card.c6,.card.c8 { grid-column:span 2; } }
 .rak { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:1.2rem; }
 .bk { display:flex; flex-direction:column; text-decoration:none; color:var(--ink); }
 .cover { position:relative; aspect-ratio:3/4; border-radius:6px 14px 14px 6px; padding:1rem .9rem .8rem 1.3rem; color:#fff; display:flex; flex-direction:column; justify-content:space-between; overflow:hidden; box-shadow:6px 8px 16px rgba(15,58,102,.3); transition:transform .25s; }
