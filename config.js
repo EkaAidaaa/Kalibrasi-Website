@@ -16,13 +16,13 @@ window.CFG = {
   // Media Pembelajaran: taruh file PDF di folder "materi" lalu tulis namanya di sini.
   // Kalau hanya 1 PDF, klik menu langsung membuka PDF-nya.
   materi: [
-    { judul: "Materi Pembelajaran Litnum", ket: "Materi pembelajaran dalam bentuk PDF.", file: "materi/materi-1.pdf" }
+    { judul: "Materi Pembelajaran Litnum", ket: "Materi pembelajaran dalam bentuk PDF.", file: "materi-1.pdf" }
   ],
 
   // Bank Soal Litnum: taruh file PDF di folder "banksoal" lalu tulis namanya di sini.
   // Kalau hanya 1 PDF, klik menu langsung membuka PDF-nya.
   banksoal: [
-    { judul: "Bank Soal Litnum", ket: "Latihan soal literasi dan numerasi dalam bentuk PDF.", file: "banksoal/banksoal-1.pdf" }
+    { judul: "LKPD Literasi Dan Numerasi Siswa", ket: "Latihan Literasi Dan Numerasi.", file: "LKPD LITNUM1.pdf" }
   ],
 
   // Galeri: taruh foto di folder "foto" lalu tulis namanya di sini (tambah baris sesukanya).
@@ -39,5 +39,5 @@ window.CFG = {
   admin: [],
 
   // Komunitas: salin dari Firebase (Project settings > Your apps > Web)
-  firebase: { apiKey: "", authDomain: "", projectId: "", storageBucket: "", messagingSenderId: "", appId: "" }
+  firebase: { apiKey: "AIzaSyC6cOGQQMmdAjhbLFYIZ5kod2O11q2ih7o", authDomain: "kalibrasi-4a7a2.firebaseapp.com", projectId: "kalibrasi-4a7a2", storageBucket: "kalibrasi-4a7a2.firebasestorage.app", messagingSenderId: "980414560379", appId: "1:980414560379:web:7c3cc956d76ceb00ffcade" }
 };
