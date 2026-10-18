@@ -27,9 +27,9 @@ window.CFG = {
 
   // Data Hasil: taruh 3 file PDF di folder yang sama dengan index.html, lalu ganti judul dan nama filenya.
   datahasil: [
-    { judul: "Data Hasil 1", ket: "Dokumen data dan hasil kegiatan.", file: "data-hasil-1.pdf" },
-    { judul: "Data Hasil 2", ket: "Dokumen data dan hasil kegiatan.", file: "data-hasil-2.pdf" },
-    { judul: "Data Hasil 3", ket: "Dokumen data dan hasil kegiatan.", file: "data-hasil-3.pdf" }
+    { judul: "Data Sampel Siswa", ket: "Dokumen data dan hasil kegiatan.", file: "datasampel.pdf" },
+    { judul: "Jurnal Pelaksanaan & Instrumen", ket: "Dokumen data dan hasil kegiatan.", file: "jurnalpelaksanaan.pdf" },
+    { judul: "Tabel Rubrik Penilaian Instrumen Per Siklus", ket: "Dokumen data dan hasil kegiatan.", file: "tabelrubrik.pdf" }
   ],
 
   // Ebook (Hasil Karya Siswa): taruh file PDF di folder yang sama dengan index.html,
