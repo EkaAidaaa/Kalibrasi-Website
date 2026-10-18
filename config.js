@@ -55,7 +55,7 @@ window.CFG = {
   ],
 
   // Komunitas: email guru/admin yang boleh menghapus kiriman siapa pun (huruf kecil semua)
-  admin: [],
+  admin: ["ekaayuni77@gmail.com", "Balivstore@gmail.com"],
 
   // Komunitas: salin dari Firebase (Project settings > Your apps > Web)
   firebase: { apiKey: "AIzaSyC6cOGQQMmdAjhbLFYIZ5kod2O11q2ih7o", authDomain: "kalibrasi-4a7a2.firebaseapp.com", projectId: "kalibrasi-4a7a2", storageBucket: "kalibrasi-4a7a2.firebasestorage.app", messagingSenderId: "980414560379", appId: "1:980414560379:web:7c3cc956d76ceb00ffcade" }
