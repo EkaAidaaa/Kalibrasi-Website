@@ -36,7 +36,7 @@ window.CFG = {
   // lalu isi judul, penulis, dan nama filenya. "cover" boleh dikosongkan (otomatis dibuatkan sampul warna)
   // atau diisi nama file gambar sampul, misalnya "cover-1.jpg". Tambah ebook dengan menyalin satu baris.
   ebook: [
-    { judul: "Judul Ebook 1", penulis: "Nama Penulis, Kelas VII A", file: "ebook-1.pdf", cover: "" },
+    { judul: "Komputer Sehari-hari", penulis: "Anak Agung Elvin Aryasuta Moning, Kelas VIII F", file: "ebook-1.pdf", cover: "" },
     { judul: "Judul Ebook 2", penulis: "Nama Penulis, Kelas VIII B", file: "ebook-2.pdf", cover: "" },
     { judul: "Judul Ebook 3", penulis: "Nama Penulis, Kelas IX C", file: "ebook-3.pdf", cover: "" }
   ],
