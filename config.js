@@ -37,8 +37,6 @@ window.CFG = {
   // atau diisi nama file gambar sampul, misalnya "cover-1.jpg". Tambah ebook dengan menyalin satu baris.
   ebook: [
     { judul: "Komputer Sehari-hari", penulis: "Anak Agung Elvin Aryasuta Moning, Kelas VIII F", file: "ebook-1.pdf", cover: "" },
-    { judul: "Judul Ebook 2", penulis: "Nama Penulis, Kelas VIII B", file: "ebook-2.pdf", cover: "" },
-    { judul: "Judul Ebook 3", penulis: "Nama Penulis, Kelas IX C", file: "ebook-3.pdf", cover: "" }
   ],
 
   // Galeri: taruh foto di folder yang sama dengan index.html lalu tulis namanya di sini (tambah baris sesukanya).
