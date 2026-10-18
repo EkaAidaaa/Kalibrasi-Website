@@ -1,7 +1,7 @@
 /* ===== SEMUA YANG PERLU DIISI ADA DI FILE INI ===== */
 window.CFG = {
-  // Link menu lain (isi dengan link asli; "#" = tampil "Segera hadir")
-  links: { tahap: "#", ebook: "#", refleksi: "#" },
+  // Link menu tambahan (cadangan, saat ini tidak dipakai)
+  links: {},
 
   // Game Evaluasi (menu Game Evaluasi)
   games: [
@@ -23,6 +23,15 @@ window.CFG = {
   // Kalau hanya 1 PDF, klik menu langsung membuka PDF-nya.
   banksoal: [
     { judul: "LKPD Literasi Dan Numerasi Siswa", ket: "Latihan Literasi Dan Numerasi.", file: "LKPD LITNUM1.pdf" }
+  ],
+
+  // Ebook (Hasil Karya Siswa): taruh file PDF di folder yang sama dengan index.html,
+  // lalu isi judul, penulis, dan nama filenya. "cover" boleh dikosongkan (otomatis dibuatkan sampul warna)
+  // atau diisi nama file gambar sampul, misalnya "cover-1.jpg". Tambah ebook dengan menyalin satu baris.
+  ebook: [
+    { judul: "Judul Ebook 1", penulis: "Nama Penulis, Kelas VII A", file: "ebook-1.pdf", cover: "" },
+    { judul: "Judul Ebook 2", penulis: "Nama Penulis, Kelas VIII B", file: "ebook-2.pdf", cover: "" },
+    { judul: "Judul Ebook 3", penulis: "Nama Penulis, Kelas IX C", file: "ebook-3.pdf", cover: "" }
   ],
 
   // Galeri: taruh foto di folder yang sama dengan index.html lalu tulis namanya di sini (tambah baris sesukanya).
