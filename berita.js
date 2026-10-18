@@ -4,7 +4,7 @@
    Tambah bacaan baru dengan menyalin satu blok { ... } dan mengubah isinya. */
 window.BERITA = [
   {
-    judul: "Antrean BBM Mengular: Mengapa Bisa Terjadi?", kategori: "Energi", foto: "berita1.jpg",
+    judul: "Antrean BBM Mengular: Mengapa Bisa Terjadi?", kategori: "Energi", foto: "berita1.jpeg",
     ringkas: "Memahami mengapa BBM bisa langka di sebuah pulau dan apa yang bisa kita lakukan.",
     isi: [
       "BBM (bahan bakar minyak) seperti bensin dan solar menggerakkan sepeda motor, mobil, truk, bahkan kapal. Di pulau seperti Bali, BBM umumnya didatangkan dari luar pulau lewat jalur laut, lalu disalurkan dengan truk tangki ke stasiun pengisian bahan bakar umum (SPBU).",
@@ -14,7 +14,7 @@ window.BERITA = [
     tanya: ["Apa yang dimaksud panic buying dan mengapa perilaku itu merugikan?", "Mengapa pulau lebih rentan mengalami gangguan pasokan BBM?", "Tuliskan dua cara hemat energi yang bisa kamu lakukan minggu ini."]
   },
   {
-    judul: "Karhutla: Ketika Hutan dan Lahan Terbakar", kategori: "Lingkungan", foto: "berita2.jpg",
+    judul: "Karhutla: Ketika Hutan dan Lahan Terbakar", kategori: "Lingkungan", foto: "berita2.jpeg",
     ringkas: "Penyebab, dampak, dan cara mencegah kebakaran hutan dan lahan.",
     isi: [
       "Karhutla adalah singkatan dari kebakaran hutan dan lahan. Api bisa menyebar cepat saat musim kemarau, ketika rumput, semak, dan tanah menjadi sangat kering. Di lahan gambut, api bahkan dapat membara di bawah permukaan tanah dan sulit dipadamkan.",
@@ -24,7 +24,7 @@ window.BERITA = [
     tanya: ["Mengapa karhutla lebih mudah terjadi di musim kemarau?", "Sebutkan dua dampak asap karhutla bagi kesehatan dan kehidupan sehari-hari.", "Apa yang harus kamu lakukan jika melihat titik api di sekitarmu?"]
   },
   {
-    judul: "Musim Kemarau dan Krisis Air Bersih", kategori: "Air", foto: "berita3.jpg",
+    judul: "Musim Kemarau dan Krisis Air Bersih", kategori: "Air", foto: "berita3.jpeg",
     ringkas: "Mengapa air bersih bisa sulit didapat dan bagaimana kita menghematnya.",
     isi: [
       "Air bersih dibutuhkan untuk minum, memasak, mandi, mencuci, dan bertani. Ketika kemarau panjang tiba, hujan jarang turun sehingga sumber air seperti sumur, sungai, dan danau mengalami penurunan debit.",
@@ -34,7 +34,7 @@ window.BERITA = [
     tanya: ["Apa yang menyebabkan sumber air menurun saat kemarau?", "Bagaimana bangunan yang menutupi tanah memengaruhi persediaan air tanah?", "Buatlah daftar tiga kebiasaan menghemat air di rumahmu."]
   },
   {
-    judul: "Sampah Residu: Masih Ada Harapan", kategori: "Sampah", foto: "berita4.jpg",
+    judul: "Sampah Residu: Masih Ada Harapan", kategori: "Sampah", foto: "berita4.jpeg",
     ringkas: "Mengenal sampah residu dan bagaimana ia bisa dimanfaatkan kembali.",
     isi: [
       "Sampah dapat dibagi menjadi sampah organik, anorganik yang dapat didaur ulang, dan residu. Residu adalah sampah yang sulit diolah lagi, misalnya bungkus makanan ringan berlapis, kemasan sachet, atau plastik tipis yang kotor.",
@@ -44,7 +44,7 @@ window.BERITA = [
     tanya: ["Apa perbedaan sampah daur ulang dan sampah residu?", "Mengapa membuang sampah ke sungai berbahaya bagi lingkungan?", "Sebutkan satu ide memanfaatkan sampah residu sebagai media belajar."]
   },
   {
-    judul: "Mengapa Banjir Datang Saat Musim Hujan?", kategori: "Lingkungan", foto: "berita5.jpg",
+    judul: "Mengapa Banjir Datang Saat Musim Hujan?", kategori: "Lingkungan", foto: "berita5.jpeg",
     ringkas: "Penyebab banjir dan langkah sederhana untuk mencegahnya.",
     isi: [
       "Hujan adalah berkah, tetapi hujan deras dapat menyebabkan banjir jika air tidak mengalir dengan baik. Banjir terjadi ketika jumlah air melebihi kemampuan sungai, saluran, dan tanah untuk menampung atau meresapkannya.",
@@ -54,7 +54,7 @@ window.BERITA = [
     tanya: ["Sebutkan tiga penyebab banjir selain curah hujan yang tinggi.", "Mengapa pohon dan tanah terbuka membantu mencegah banjir?", "Apa yang harus dilakukan untuk menjaga keselamatan saat banjir?"]
   },
   {
-    judul: "Cek Dulu Sebelum Sebar", kategori: "Literasi Digital", foto: "berita6.jpg",
+    judul: "Cek Dulu Sebelum Sebar", kategori: "Literasi Digital", foto: "berita6.jpeg",
     ringkas: "Langkah sederhana mengenali kabar bohong di media sosial.",
     isi: [
       "Di era digital, informasi menyebar sangat cepat, termasuk kabar bohong atau hoaks. Hoaks dibuat agar orang percaya, marah, atau takut, lalu membagikannya tanpa berpikir. Karena itu, kemampuan literasi digital menjadi sangat penting.",
